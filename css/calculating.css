@@ -24,6 +24,10 @@
   font-size: 30px;
   font-weight: bolder;
   color: rgb(221, 229, 228);
+  background-image: url("../img/close-btn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .incalCloseBox:hover {
