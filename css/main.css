@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.inBox {
+  display: flex;
+  width: 1200px;
+  height: 600px;
+}
+
+.clBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 600px;
+}
+
+.biBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 600px;
+}
+
+.clImg {
+  width: 400px;
+  height: 550px;
+  border-radius: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/calculating.png');
+}
+
+.clImg:hover {
+  scale: 1.05;
+}
+
+.biImg {
+  width: 400px;
+  height: 550px;
+  border-radius: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/binaryConverter.png');
+}
+
+.biImg:hover {
+  scale: 1.05;
+}

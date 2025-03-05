@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계산기,진수변환기</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/modalBox.css" />
+    <link rel="stylesheet" href="./css/calculating.css" />
+    <link rel="stylesheet" href="./css/binaryConverter.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+  </head>
+  <body>
+    <div class="outBox">
+      <div class="inBox">
+        <div class="clBox">
+          <div class="clImg" id="calImg"></div>
+        </div>
+        <div class="biBox">
+          <div class="biImg" id="binImg"></div>
+        </div>
+      </div>
+    </div>
+    <!-- modalBox -->
+    <div class="modalBox" id="modalBox">
+      <div class="incalBox" id="incalBox">
+        <div class="incalBoxCloseBox">
+          <div class="incalCloseBox xi-close" id="incalCloseBtn"></div>
+        </div>
+        <div class="incalBoxSt">
+          <div class="calBox">
+            <div class="calHd"><div class="calTextBox" id="calRes"></div></div>
+            <div class="calBody">
+              <div class="calBody1">
+                <div>
+                  <button class="calBtn" onclick="calBtnC()">C</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtnR('%')">%</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtnD('/')">/</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtnB()">BS</button>
+                </div>
+              </div>
+              <div class="calBody1">
+                <div>
+                  <button class="calBtn" onclick="calBtn7(7)">7</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtn8(8)">8</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtn9(9)">9</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calClc()">=</button>
+                </div>
+              </div>
+              <div class="calBody1">
+                <div>
+                  <button class="calBtn" onclick="calBtn4(4)">4</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtn5(5)">5</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtn6(6)">6</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtnX('X')">X</button>
+                </div>
+              </div>
+              <div class="calBody1">
+                <div>
+                  <button class="calBtn" onclick="calBtn1(1)">1</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtn2(2)">2</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtn3(3)">3</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtnP('+')">+</button>
+                </div>
+              </div>
+              <div class="calBody1">
+                <div>
+                  <button class="calBtn" onclick="calBtn0(0)">0</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtn00('00')">00</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtnDot('.')">.</button>
+                </div>
+                <div>
+                  <button class="calBtn" onclick="calBtnM('-')">-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalBox2" id="modalBox2">
+      <div class="binaryBox" id="binaryBox">
+        <div class="binaryBoxCloseBox">
+          <div class="binaryCloseBox xi-close" id="binaryCloseBtn"></div>
+        </div>
+        <div class="binaryBoxSt">
+          <div class="binBox">
+            <div class="binHd"><div class="binTextBox" id="binRes"></div></div>
+            <div class="binBody">
+              <div class="binBtnBox">
+                <div><button onclick="twoJinsu(2)">2진수</button></div>
+                <div><button onclick="eightJinsu(8)">8진수</button></div>
+                <div><button onclick="sixteenJinsu(16)">16진수</button></div>
+              </div>
+              <div class="binBtnNum">
+                <input type="text" placeholder="숫자를 입력하세요." id="num" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modalBox.js"></script>
+    <script src="./js/calculating.js"></script>
+    <script src="./js/binaryConverter.js"></script>
+  </body>
+</html>
